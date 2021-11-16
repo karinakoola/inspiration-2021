@@ -1,27 +1,18 @@
-import { api, data, schedule, params } from "@serverless/cloud";
+import { api, data } from "@serverless/cloud";
 
-// Create GET route and return users
-api.get("/users", async (req, res) => {
-  // Get users from Serverless Data
-  let result = await data.get("user:*", true);
-  // Return the results
+// Create GET route and return courses
+api.get("/courses", async (req, res) => {
+  const output = await data.get("course:*");
   res.send({
-    users: result.items,
+    body: output.items,
   });
 });
 
-api.get("/home", (req, res) => {
-  res.send({
-    result: "Hello, world!"
-  });
-});
-
-// Redirect to users endpoint
+// Redirect to home endpoint
 api.get("/*", (req, res) => {
-  // let result = await data.set('hello', 'wORld');
-  // res.json({
-  //   body: result,
-  // });
-  // res.redirect("/users");
-  res.redirect("/home");
+  res.redirect("/courses");
 });
+
+// schedule.every("1 minute", () => {
+//   console.log("Beep Boop ~*-*~");
+// });

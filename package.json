@@ -14,5 +14,9 @@
   "serverless": {
     "app": "inspiration-2021",
     "org": "kkoola"
+  },
+  "dependencies": {
+    "lit": "^2.0.2",
+    "lit-element": "^3.0.2"
   }
 }

@@ -1,35 +1,29 @@
 [
   {
-    "key": "user:1",
+    "key": "course:1",
     "value": {
       "id": "1",
-      "name": "User #1",
-      "status": "active"
-    },
-    "created": "2021-11-15T19:11:36.000Z",
-    "modified": "2021-11-15T21:24:24.000Z",
-    "label1": "active:1"
+      "name": "Navigating Extraordinary Times",
+      "delivery": "online",
+      "provider": "Athabasca University"
+    }
   },
   {
-    "key": "user:2",
+    "key": "course:2",
     "value": {
       "id": "2",
-      "name": "User #2",
-      "status": "inactive"
-    },
-    "created": "2021-11-15T19:11:36.000Z",
-    "modified": "2021-11-15T21:24:24.000Z",
-    "label1": "inactive:2"
+      "name": "How To Do Your Taxes",
+      "delivery": "blended",
+      "provider": "McMaster University"
+    }
   },
   {
-    "key": "user:3",
+    "key": "course:3",
     "value": {
       "id": "3",
-      "name": "User #3",
-      "status": "active"
-    },
-    "created": "2021-11-15T19:11:36.000Z",
-    "modified": "2021-11-15T19:11:36.000Z",
-    "label1": "active:3"
+      "name": "Dealing With Mondays",
+      "delivery": "in-person",
+      "provider": "University of Guelph"
+    }
   }
 ]
