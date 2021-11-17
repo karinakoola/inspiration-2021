@@ -5,7 +5,8 @@
       "id": "1",
       "name": "Navigating Extraordinary Times",
       "delivery": "online",
-      "provider": "Athabasca University"
+      "provider": "Athabasca University",
+      "image_url": "https://admin.wave.d2l.com/assets/img/provider_logos/au.svg"
     }
   },
   {
@@ -14,7 +15,8 @@
       "id": "2",
       "name": "How To Do Your Taxes",
       "delivery": "blended",
-      "provider": "McMaster University"
+      "provider": "McMaster University",
+      "image_url": "https://admin.wave.d2l.com/assets/img/provider_logos/mac.svg"
     }
   },
   {
@@ -23,7 +25,8 @@
       "id": "3",
       "name": "Dealing With Mondays",
       "delivery": "in-person",
-      "provider": "University of Guelph"
+      "provider": "University of Guelph",
+      "image_url": "https://admin.wave.d2l.com/assets/img/provider_logos/uofg.svg"
     }
   }
 ]
