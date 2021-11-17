@@ -1,9 +1,9 @@
-import { html, LitElement } from 'https://cdn.skypack.dev/lit';
+import { html, css, LitElement } from 'https://cdn.skypack.dev/lit';
 import { nothing } from 'https://cdn.skypack.dev/lit-html';
 import { repeat } from 'https://cdn.skypack.dev/lit-html/directives/repeat';
 
 import 'https://cdn.skypack.dev/@brightspace-ui/core/components/button/button';
-import './nova-activity-card';
+import './nova-activity-card.js';
 
 export class App extends LitElement {
 
@@ -27,7 +27,7 @@ export class App extends LitElement {
   }
 
   get _activityTemplate() {
-    this._activities.length > 0 ? 
+    this._activities?.length > 0 ? 
       repeat(this._activities,
         activity => activity.id,
         activity => html`<nova-activity-card
