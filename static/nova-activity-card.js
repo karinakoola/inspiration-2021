@@ -5,11 +5,10 @@ import 'https://cdn.skypack.dev/@brightspace-ui/core/components/icons/icon';
 import 'https://cdn.skypack.dev/@brightspace-ui/core/components/loading-spinner/loading-spinner';
 
 import { bodySmallStyles, heading4Styles } from 'https://cdn.skypack.dev/@brightspace-ui/core/components/typography/styles';
-import { css, html, LitElement } from 'https://cdn.skypack.dev/lit-element';
+import { css, html, LitElement } from 'https://cdn.skypack.dev/lit';
 import { classMap } from 'https://cdn.skypack.dev/lit-html/directives/class-map';
-import { SkeletonMixin } from 'https://cdn.skypack.dev/@brightspace-ui/core/components/skeleton/skeleton-mixin';
 
-class ActivityCardComponent extends SkeletonMixin(LitElement) {
+class ActivityCardComponent extends LitElement {
 
   static get properties() {
     return {

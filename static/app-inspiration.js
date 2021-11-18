@@ -37,24 +37,23 @@ export class App extends LitElement {
     : nothing;
   }
 
-  render() {
-    const fetchCourses = async () => {
-      try {
-        let res = await fetch('/courses');
-  
-        if (res.ok) {
-          const output = await res.json();
-          this._activities = output.body.map(b => b.value);
-          console.log('The result is Okay!!');
-        }
-      } catch(e) {
-        console.log('ALERT: Something is wrong', e);
-      }
-    };
+  async fetchCourses() {
+    try {
+      let res = await fetch('/courses');
 
+      if (res.ok) {
+        const output = await res.json();
+        this._activities = output.body.map(b => b.value);
+      }
+    } catch(e) {
+      console.log('ALERT: Something is wrong', e);
+    }
+  }
+
+  render() {
     return html`
       <p>Hello, World :) This is my Inspiration project for 2021</p>
-      <d2l-button primary @click=${fetchCourses}>Retrieve courses</d2l-button>
+      <d2l-button primary @click=${this.fetchCourses}>Retrieve courses</d2l-button>
       <div role="region" aria-live="polite" class="activity-carousel" id="activity-carousel">
         ${this._activityTemplate}
       </div>
