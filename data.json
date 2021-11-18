@@ -6,7 +6,8 @@
       "name": "Navigating Extraordinary Times",
       "delivery": "online",
       "provider": "Athabasca University",
-      "image_url": "https://admin.wave.d2l.com/assets/img/provider_logos/au.svg"
+      "provider_url": "https://admin.wave.d2l.com/assets/img/provider_logos/au.svg",
+      "course_url": "https://s.brightspace.com/course-images/images/566b31c7-c45d-42c2-8cb5-4ff6dc0a58a0/tile-high-density-max-size.jpg"
     }
   },
   {
@@ -16,7 +17,8 @@
       "name": "How To Do Your Taxes",
       "delivery": "blended",
       "provider": "McMaster University",
-      "image_url": "https://admin.wave.d2l.com/assets/img/provider_logos/mac.svg"
+      "provider_url": "https://admin.wave.d2l.com/assets/img/provider_logos/mac.svg",
+      "course_url": "https://www.gannett-cdn.com/-mm-/9e1f6e2ee20f44aa1f3be4f71e9f3e52b6ae2c7e/c=0-110-2121-1303/local/-/media/2019/07/19/USATODAY/usatsports/taxes-filling-out-forms.jpg?width=2121&height=1193&fit=crop&format=pjpg&auto=webp"
     }
   },
   {
@@ -26,7 +28,8 @@
       "name": "Dealing With Mondays",
       "delivery": "in-person",
       "provider": "University of Guelph",
-      "image_url": "https://admin.wave.d2l.com/assets/img/provider_logos/uofg.svg"
+      "provider_url": "https://admin.wave.d2l.com/assets/img/provider_logos/uofg.svg",
+      "course_url": "https://www.real8group.com/wp-content/uploads/2018/09/9-10-1.jpg"
     }
   }
 ]

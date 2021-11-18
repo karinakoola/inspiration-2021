@@ -20,7 +20,6 @@ class ActivityCardComponent extends LitElement {
     return [
       bodySmallStyles,
       heading4Styles,
-      super.styles,
       css`
         :host {
           display: inline-block;
@@ -166,7 +165,7 @@ class ActivityCardComponent extends LitElement {
     return html`
       <d2l-card class="activity-card" title="${this.activity.name}" text="${this.activity.name}">
         <div slot="header" class="course-image-wrapper d2l-skeletize">
-          <img alt="" class="course-image" src=${this.activity.image_url}>
+          <img alt="" class="course-image" src=${this.activity.course_url}>
         </div>
         <div slot="content">
           ${this._contentTemplate}
@@ -187,7 +186,7 @@ class ActivityCardComponent extends LitElement {
   get _contentTemplate() {
     return html`
       <div class="provider-logo-wrapper d2l-skeletize d2l-skeletize-40">
-        <img class="provider-logo" alt="${this.activity.provider}" src="${this.activity.image_url}">
+        <img class="provider-logo" alt="${this.activity.provider}" src="${this.activity.provider_url}">
       </div>
       <div class="activity-title-wrapper">
         <h4 class=${classMap(this._activityTitleClasses)}>${this.activity.name}</h4>

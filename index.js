@@ -1,4 +1,4 @@
-import { api, data } from "@serverless/cloud";
+import { api, data, schedule } from "@serverless/cloud";
 
 // Create GET route and return courses
 api.get("/courses", async (req, res) => {
@@ -8,11 +8,11 @@ api.get("/courses", async (req, res) => {
   });
 });
 
-// Redirect to home endpoint
+// Redirect to courses endpoint
 // api.get("/*", (req, res) => {
 //   res.redirect("/courses");
 // });
 
-// schedule.every("1 minute", () => {
-//   console.log("Beep Boop ~*-*~");
-// });
+schedule.every("1 minute", () => {
+  console.log("Beep Boop ~*-*~");
+});
