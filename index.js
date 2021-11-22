@@ -13,6 +13,6 @@ api.get("/courses", async (req, res) => {
 //   res.redirect("/courses");
 // });
 
-schedule.every("1 minute", () => {
-  console.log("Beep Boop ~*-*~");
-});
+// schedule.every("1 minute", () => {
+//   console.log("Beep Boop ~*-*~");
+// });
